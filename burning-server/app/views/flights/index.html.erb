@@ -21,9 +21,10 @@
         <td><%= flight.origin %></td>
         <td><%= flight.destination %></td>
         <td><%= flight.date %></td>
-        <td><%= flight.plane %></td>
+        <td><%= flight.plane.name %></td>
         <td><%= link_to 'Show', flight %></td>
         <td><%= link_to 'Edit', edit_flight_path(flight) %></td>
+        <%# <%= reails.desotry %> 
         <td><%= link_to 'Destroy', flight, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

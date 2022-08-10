@@ -13,12 +13,22 @@
 
   <div class="field">
     <%= form.label :user_id %>
-    <%= form.number_field :user_id %>
+    <%= form.select :user_id, User.pluck(:user, :id) %>
   </div>
 
   <div class="field">
     <%= form.label :flight_id %>
-    <%= form.number_field :flight_id %>
+    <%= form.select :flight_id, Flight.pluck(:flight_number, :id) %>
+  </div>
+
+   <div class="field">
+    <%= form.label :row %>
+    <%= form.text_field :row %>
+  </div>
+
+   <div class="field">
+    <%= form.label :column %>
+    <%= form.text_field :column %>
   </div>
 
   <div class="actions">
