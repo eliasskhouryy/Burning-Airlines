@@ -14,18 +14,18 @@ import Airplanes from "./components/Airplanes"
 import Flights from './components/Flights';
 import Search from './components/Search';
 import Reservations from './components/Reservations';
+import Homepage from './components/Homepage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App/>}>
-        
+      <Route element={<App/>}>
+        <Route path="/" element={<Homepage/>} />
         <Route path="Airplanes" element={<Airplanes />} />
         <Route path="Flights" element={<Flights />} />
         <Route path="Search" element={<Search />} />
         <Route path="Reservations" element={<Reservations />} />
-
       </Route>
     </Routes>
   </BrowserRouter>

@@ -13,6 +13,7 @@ class Airplanes extends Component {
     render () {
         return (
             <div>
+                <h1>Airplanes</h1>
                 <AirplaneForm/>
             </div>
         )
