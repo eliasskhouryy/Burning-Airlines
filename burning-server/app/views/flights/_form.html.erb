@@ -33,10 +33,13 @@
 
   <div class="field">
     <%= form.label :plane %>
-    <%= form.text_area :plane %>
+    <%= form.select :plane_id, Plane.pluck(:name, :id) %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+
+<%# 
+ <%= f.select :song_id, @current_user.songs.pluck(:title), :include_blank => true %> 

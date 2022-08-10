@@ -11,5 +11,7 @@ p1 = Plane.create :name => 'sei54', :rows => '50', :columns => '4'
 puts "#{Plane.count} planes"
 
 puts "Association"
-# f1.users << u1
+f1.users << u1
 u1.flights << f1
+
+puts "complete"
